@@ -8,7 +8,7 @@ from script.sold_out import purchase
 test_shipping = {
     "name": "Test McTesty",
     "email": "testy@gmail.com",
-    "telephone": "123 456 7890",
+    "telephone": "1234567890",
     "address": "123 Test St.",  # note that you must ship to billing address
     "zip": "12345",
     "unit" : "",

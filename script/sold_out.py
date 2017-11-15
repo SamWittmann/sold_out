@@ -9,6 +9,10 @@ from selenium.webdriver.common.action_chains import ActionChains
 from datetime import datetime
 from time import sleep
 
+# Add path to the Chrome Driver
+# CHROME_DRIVER_PATH = "/path/to/chromedriver"  # Fill in the location of your chromedriver file
+CHROME_DRIVER_PATH = "/Users/samwittmann/Documents/sold_out/sold_out/driver/chromedriver"
+
 # Insert shipping info here
 SHIPPING_INFO = {
     "name": "INSERT NAME HERE",
@@ -41,6 +45,11 @@ ITEM_INFO = {
     "color": "INSERT COLOR HERE",  # If left blank, will choose the default color
     "optional_direct_link": "INSERT LINK HERE"  # If you have a direct link to the item, put it here, otherwise leave blank
 }
+
+
+"""
+USERS: MAKE NO EDITS BELOW THIS LINE
+"""
 
 
 class Item:
@@ -98,7 +107,7 @@ def purchase(item_dictionary, shipping_dictionary, billing_dictionary, test_mode
     rather than waiting until drop time.
     :return: None
     """
-    driver = webdriver.Chrome("../driver/chromedriver")
+    driver = webdriver.Chrome(executable_path="../driver/chromedriver")
     driver.get("http://www.supremenewyork.com/shop/all")
 
     item = Item(item_dictionary)
