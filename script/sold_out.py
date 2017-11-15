@@ -98,7 +98,7 @@ def purchase(item_dictionary, shipping_dictionary, billing_dictionary, test_mode
     rather than waiting until drop time.
     :return: None
     """
-    driver = webdriver.Chrome("./driver/chromedriver")
+    driver = webdriver.Chrome("../driver/chromedriver")
     driver.get("http://www.supremenewyork.com/shop/all")
 
     item = Item(item_dictionary)

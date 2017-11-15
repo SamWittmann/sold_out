@@ -1,8 +1,9 @@
-from sold_out import purchase
 import traceback
 import unittest
+
 import selenium.common.exceptions as exceptions
 
+from script.sold_out import purchase
 
 test_shipping = {
     "name": "Test McTesty",
