@@ -9,10 +9,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 from datetime import datetime
 from time import sleep
 
-# Add path to the Chrome Driver
-# CHROME_DRIVER_PATH = "/path/to/chromedriver"  # Fill in the location of your chromedriver file
-CHROME_DRIVER_PATH = "/Users/samwittmann/Documents/sold_out/sold_out/driver/chromedriver"
-
 # Insert shipping info here
 SHIPPING_INFO = {
     "name": "INSERT NAME HERE",
