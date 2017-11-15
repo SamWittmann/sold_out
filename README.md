@@ -2,8 +2,16 @@
 A Python purchasing bot for automating buying clothing from Supreme's webstore using the Selenium library.
 
 ***IMPORTANT NOTE***
+
 The webstore may require you to fill out a Captcha when it tries to checkout. You should make sure you're watching the browsing window that opens so that you can fill out a Captcha if it appears, as the bot cannot complete them.
+
 ***/IMPORTANT NOTE***
+
+***IMPORTANT NOTE 2***
+
+If you get an error trying to initialize the browser, try reinstalling the Chrome Driver (https://chromedriver.storage.googleapis.com/index.html?path=2.33/) and replacing the included executable with the fresh download.
+
+***/IMPORTANT NOTE 2***
 
 The actual script is located in script/sold_out.py. 
 
